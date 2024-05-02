@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Default parameter on functions (to avoid NaN)</h3>
+
+    <script>
+        function Sum(a,b=20) {
+            document.write(`<h1> Sum = ${  a + b } </h1>`);
+
+        }
+        Sum(12,23);//35
+        Sum(22);//NaN
+
+
+        
+
+
+    </script>
+    <script>
+
+
+        function mul(a,b=2,c=3){
+            document.write(`<h1> product = ${a * b * c}</h1>`)
+        }
+        mul(10,20,30)
+        mul(30,20)
+        mul(19)
+    </script>
+</body>
+</html>
