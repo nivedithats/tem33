@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H3>Array join -> object array (spread)</H3>
+
+    <script>
+        let c1 = [
+        {
+            //key:value,propety = > props
+            id:123,
+            name:'manoj',
+            email:'manoj@gmail.com'
+        },
+        {
+            
+            
+            id:124,
+            name:'manoj',
+            email:'manoj@gmail.com'
+        }
+        ];
+        let c2 =[
+        {
+            
+            id:222,
+            name:'manoj',
+            email:'manoj@gmail.com'
+        },
+
+        {
+            
+            id:233,
+            name:'manoj',
+            email:'manoj@gmail.com'
+        }
+
+        ];
+
+        let c3 = [
+
+        {
+            id:266,
+            name:'manoj',
+            email:'manoj@gmail.com'
+        },
+        ...c1,
+        ...c2
+        ];
+
+        console.log('c1',c1);
+        console.log('c2',c2);
+        console.log('c3',c3);
+
+
+    </script>
+</body>
+</html>

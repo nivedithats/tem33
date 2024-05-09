@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h3>Map() constructor</h3>
+
+<p>Amap is constructor(basic mapping of key and value),</p>
+<p>Map are different than an objects in that their keys can be anything (primitive values as well as  objects)not just string and symbols.</p>
+
+
+<script>
+    var x = new Map(); //instance
+
+
+    /* instance.set("key","value")
+        instance.get("key")
+
+     */
+     
+     
+     x.set("id",1232);
+     x.set("title","javaSxript");
+     x.set("duration","1month");
+     x.set("isEnable",true);
+
+
+     console.log(x); //structure of output will be associative (entries) set {key => value}
+
+
+     console.log('id=',x.get('id'));
+     console.log('title =',x.get('title'));
+     console.log('duration = ',x.get('duration'));
+
+     document.write(`<h1>${x.get("id")}</h1>`)
+     document.write(`<h1>${x.get("title")}</h1>`)
+        document.write(`<h1>${x.get("duration")}</h1>`)
+
+</script>
+
+
+</body>
+</html>
